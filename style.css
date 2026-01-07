@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Array";
+  src: url("/fonts/ARRAY-REGULAR.OTF") format("otf");
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/SATOSHI-LIGHT.OTF") format("otf");
+}
+
+@font-face {
+  font-family: "IBMPlexMono";
+  src: url("/fonts/IBMPLEXMONO-EXTRALIGHT.TTF") format("truetype");
+}
+
+:root {
+  --font-title: "Array", sans-serif;
+  --font-body: "Satoshi", sans-serif;
+  --font-nav: "IBMPlexMono";
+
+  --text-color: #ffffe3;
+  --bg-color: #10100e;
+  --accent-color: #00becf;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+h1 {
+  font-size: clamp(2rem, 0.7179rem + 5.4701vw, 4rem);
+  font-family: var(--font-title);
+  color: var(--text-color);
+}
+
+h2 {
+  font-size: clamp(1.625rem, 1.0638rem + 2.3932vw, 2.5rem);
+  font-family: var(--font-title);
+  color: var(--text-color);
+}
+
+h3 {
+  font-size: clamp(1.375rem, 1.0545rem + 1.3675vw, 1.875rem);
+  font-family: var(--font-title);
+  color: var(--text-color);
+}
+
+p {
+  font-size: clamp(1rem, 0.9199rem + 0.3419vw, 1.125rem);
+  font-family: var(--font-body);
+  color: var(--text-color);
+}
+
+.nav {
+  font-family: var(--font-nav);
+}
+
+.nav:hover {
+  color: var(--accent-color);
+}
+
+.custom-super {
+  vertical-align: super;
+  font-size: 0.4em;
+  line-height: 0;
+  font-weight: 600;
+  color: var(--accent-color);
+}
+
+#website-title {
+  transform: translateX(0px);
+  animation: floating 2s ease-in-out infinite;
+}
+
+#website-title:hover {
+  color: var(--accent-color);
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
