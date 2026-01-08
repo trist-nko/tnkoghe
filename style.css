@@ -27,6 +27,7 @@
   --text-color: #ffffe3;
   --bg-color: #10100e;
   --accent-color: #00becf;
+  --accent-color2: #fc9feb;
 }
 
 body {
@@ -76,10 +77,22 @@ p {
 #website-title {
   transform: translateX(0px);
   animation: floating 2s ease-in-out infinite;
+  transition: color 0.4s ease-in-out, background-position 0.4s ease-in-out;
+  background-image: radial-gradient(
+    circle,
+    rgba(0, 190, 207, 1) 0%,
+    rgba(252, 159, 235, 1) 70%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  display: inline-block;
 }
 
 #website-title:hover {
-  color: var(--accent-color);
+  color: transparent;
+  cursor: pointer;
+  animation: floating 2s ease-in-out infinite;
 }
 
 @keyframes floating {
