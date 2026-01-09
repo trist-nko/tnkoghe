@@ -19,8 +19,19 @@
   src: url("/fonts/IBMPLEXMONO-EXTRALIGHT.TTF") format("truetype");
 }
 
+@font-face {
+  font-family: "InstrumentSerif-Regular";
+  src: url("/fonts/InstrumentSerif-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "InstrumentSerif-Italic";
+  src: url("/fonts/InstrumentSerif-Italic.ttf") format("truetype");
+}
+
 :root {
   --font-title: "Array", sans-serif;
+  --font-header: "InstrumentSerif-Regular", serif;
   --font-body: "Satoshi", sans-serif;
   --font-nav: "IBMPlexMono";
 
@@ -36,19 +47,19 @@ body {
 
 h1 {
   font-size: clamp(2rem, 0.7179rem + 5.4701vw, 4rem);
-  font-family: var(--font-title);
+  font-family: var(--font-header);
   color: var(--text-color);
 }
 
 h2 {
   font-size: clamp(1.625rem, 1.0638rem + 2.3932vw, 2.5rem);
-  font-family: var(--font-title);
+  font-family: var(--font-header);
   color: var(--text-color);
 }
 
 h3 {
   font-size: clamp(1.375rem, 1.0545rem + 1.3675vw, 1.875rem);
-  font-family: var(--font-title);
+  font-family: var(--font-header);
   color: var(--text-color);
 }
 
@@ -72,9 +83,11 @@ p {
   line-height: 0;
   font-weight: 600;
   color: var(--accent-color);
+  font-weight: 200;
 }
 
 #website-title {
+  font-family: var(--font-title);
   transform: translateX(0px);
   animation: floating 2s ease-in-out infinite;
   transition: color 0.4s ease-in-out, background-position 0.4s ease-in-out;
@@ -87,6 +100,8 @@ p {
   background-clip: text;
   -webkit-background-clip: text;
   display: inline-block;
+  font-weight: 200;
+  font-size: 80px;
 }
 
 #website-title:hover {
