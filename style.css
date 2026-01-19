@@ -1,3 +1,4 @@
+/* Global CSS Attributes */
 * {
   padding: 0;
   margin: 0;
@@ -33,7 +34,7 @@
   --font-title: "Array", sans-serif;
   --font-header: "InstrumentSerif-Regular", serif;
   --font-body: "Satoshi", sans-serif;
-  --font-nav: "IBMPlexMono";
+  --font-nav: "Satoshi";
 
   --text-color: #ffffe3;
   --bg-color: #10100e;
@@ -69,11 +70,57 @@ p {
   color: var(--text-color);
 }
 
-.nav {
-  font-family: var(--font-nav);
+picture {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
-.nav:hover {
+/* Menu Navigation styles */
+.menu-nav {
+  display: flex;
+  font-family: var(--font-nav);
+  color: var(--text-color);
+  font-weight: 100;
+  border-bottom: solid 1px var(--text-color);
+  padding: 24px 64px 24px 64px;
+  align-items: center;
+}
+
+.menu-tabs {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  gap: 32px;
+  border-bottom: solid 1px transparent;
+}
+
+#about:hover,
+#projects:hover,
+#resume:hover {
+  color: var(--accent-color);
+  transition: ease-in-out 0.3s;
+  cursor: pointer;
+  border-bottom: solid 1px var(--accent-color);
+}
+
+#logo {
+  font-family: var(--font-title);
+  color: var(--accent-color);
+  font-size: 32px;
+}
+
+/* Title and Qualifications */
+
+.qualifications {
+  font-family: var(--font-header);
+  color: var(--text-color);
+  font-size: 2.625rem;
+  margin-left: 64px;
+}
+
+.dots {
   color: var(--accent-color);
 }
 
@@ -90,7 +137,9 @@ p {
   font-family: var(--font-title);
   transform: translateX(0px);
   animation: floating 2s ease-in-out infinite;
-  transition: color 0.4s ease-in-out, background-position 0.4s ease-in-out;
+  transition:
+    color 0.4s ease-in-out,
+    background-position 0.4s ease-in-out;
   background-image: radial-gradient(
     circle,
     rgba(0, 190, 207, 1) 0%,
@@ -101,7 +150,8 @@ p {
   -webkit-background-clip: text;
   display: inline-block;
   font-weight: 200;
-  font-size: 80px;
+  font-size: 8rem;
+  margin-left: 64px;
 }
 
 #website-title:hover {
@@ -120,4 +170,42 @@ p {
   100% {
     transform: translateY(0px);
   }
+}
+
+/* Hero Image and Text Below it */
+
+.hero-section img {
+  height: 60vh;
+  width: 100%;
+  margin-top: 32px;
+}
+
+.description-hero {
+  font-family: var(--font-body);
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 64px 32px 64px;
+  margin-top: 32px;
+  border-bottom: solid 1px var(--text-color);
+}
+
+.desc-text {
+  width: 40vw;
+  font-size: 1.2rem;
+}
+
+.desc-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 32px;
+  height: 32px;
+  width: 32px;
+}
+
+.desc-icons:hover {
+  color: var(--accent-color);
+  transition: ease-in-out 0.3s;
+  cursor: pointer;
 }
