@@ -70,6 +70,13 @@ p {
   color: var(--text-color);
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
 picture {
   max-width: 100%;
   height: auto;
@@ -204,8 +211,6 @@ picture {
   width: 32px;
 }
 
-.desc-icons:hover {
-  color: var(--accent-color);
-  transition: ease-in-out 0.3s;
+.desc-icons img:hover {
   cursor: pointer;
 }
