@@ -84,6 +84,9 @@ picture {
   object-fit: cover;
 }
 
+a {
+  text-decoration: none;
+}
 /* Menu Navigation styles */
 .menu-nav {
   display: flex;
@@ -179,7 +182,7 @@ picture {
   }
 }
 
-/* Hero Image and Text Below it */
+/* Hero Image and Text Below it and Logo Links */
 
 .hero-section img {
   height: 60vh;
@@ -207,10 +210,28 @@ picture {
   justify-content: flex-end;
   align-items: center;
   gap: 32px;
+}
+
+.desc-icons img {
   height: 32px;
   width: 32px;
 }
 
 .desc-icons img:hover {
   cursor: pointer;
+}
+
+.desc-icons a {
+  display: inline-block;
+  line-height: 0;
+}
+
+/* Project Cards under Hero */
+
+.project-grid {
+  display: flex;
+}
+
+.project-card-1 img {
+  width: 50vw;
 }
