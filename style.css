@@ -230,8 +230,14 @@ a {
 
 .project-grid {
   display: flex;
+  height: 600px;
 }
 
 .project-card-1 img {
   width: 50vw;
+}
+
+.project-card-1-desc p {
+  display: flex;
+  justify-content: flex-end;
 }
