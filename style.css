@@ -230,14 +230,16 @@ a {
 
 .project-grid {
   display: flex;
-  height: 600px;
+  min-height: 720px;
+  gap: 40px;
 }
 
 .project-card-1 img {
-  width: 50vw;
+  width: 100vw;
 }
 
 .project-card-1-desc p {
   display: flex;
   justify-content: flex-end;
+  text-align: right;
 }
