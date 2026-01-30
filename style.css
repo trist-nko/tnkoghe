@@ -85,8 +85,13 @@ picture {
   object-fit: cover;
 }
 
-a {
+a:link {
   text-decoration: none;
+  color: var(--text-color);
+}
+
+a:visited {
+  color: var(--text-color);
 }
 /* Menu Navigation styles */
 .menu-nav {
@@ -118,8 +123,29 @@ a {
 
 #logo {
   font-family: var(--font-title);
-  color: var(--accent-color);
+  color: var(
+    --accent-color
+  ); /* Initial color, visible when background-image is not revealed */
   font-size: 32px;
+
+  /* Added styles for color animation */
+  transition:
+    color 0.4s ease-in-out,
+    background-position 0.4s ease-in-out;
+  background-image: radial-gradient(
+    circle,
+    rgba(0, 190, 207, 1) 0%,
+    rgba(252, 159, 235, 1) 70%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  display: inline-block; /* Ensure it behaves like website-title for background-clip */
+}
+
+#logo:hover {
+  color: transparent; /* Reveals background-image on hover */
+  cursor: pointer;
 }
 
 /* Title and Qualifications */
