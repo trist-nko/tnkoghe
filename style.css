@@ -315,3 +315,38 @@ a:visited {
 .project-card-2-desc p {
   text-align: left; /* Align paragraph text to the left */
 }
+
+/* About Me Page */
+
+.about-grid {
+  margin: 64px 64px 32px 64px;
+}
+
+#about-title {
+  border-bottom: 1px solid var(--text-color);
+  margin-bottom: 64px;
+}
+
+.about-flex-container {
+  display: flex;
+  gap: 32px;
+  margin-top: 64px;
+  justify-content: space-between; /* Added some top margin for spacing from the title */
+}
+
+.about-info {
+  flex: 1;
+  max-width: 530px; /* Allow the text container to take available space */
+}
+
+.about-desc {
+  margin-bottom: 32px;
+}
+
+.about-img {
+  flex: 1;
+  max-width: 50%;
+  height: 560px; /* Allow the image to take available space */
+  /* display: flex;
+  flex-direction: row; */ /* These are no longer needed here */
+}
