@@ -350,3 +350,13 @@ a:visited {
   /* display: flex;
   flex-direction: row; */ /* These are no longer needed here */
 }
+
+/* Lorsque le temps est za project page */
+
+.picture-lorsque {
+  margin: 64px;
+}
+
+.lorsque-title {
+  font-weight: 200;
+}
