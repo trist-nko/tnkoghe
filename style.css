@@ -355,8 +355,37 @@ a:visited {
 
 .picture-lorsque {
   margin: 64px;
+  overflow: hidden;
 }
 
 .lorsque-title {
   font-weight: 200;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.lorsque-desc-container {
+  display: flex;
+  gap: 40px;
+  margin: 64px 32px;
+  align-items: center;
+}
+
+.bw-gars {
+  width: 33%;
+  object-fit: contain;
+}
+
+.lorsque-text {
+  flex: 2;
+  column-count: 2;
+  column-gap: 40px;
+  font-weight: 50;
+  text-align: justify;
+  hyphens: auto;
+}
+
+#fatu {
+  margin: 64px;
+  overflow: hidden;
 }
