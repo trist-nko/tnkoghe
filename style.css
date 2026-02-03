@@ -232,6 +232,7 @@ a:visited {
 .desc-text {
   width: 40vw;
   font-size: 1.2rem;
+  font-weight: 100;
 }
 
 .desc-icons {
@@ -313,9 +314,11 @@ a:visited {
 
 .project-card-1-desc p {
   text-align: right;
+  font-weight: 100;
 }
 .project-card-2-desc p {
-  text-align: left; /* Align paragraph text to the left */
+  text-align: left;
+  font-weight: 100; /* Align paragraph text to the left */
 }
 
 /* About Me Page */
