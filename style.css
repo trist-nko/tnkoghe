@@ -452,6 +452,15 @@ a:visited {
 }
 
 .lorsque-page2 {
+  margin-left: 64px;
+}
+
+.lorsque-page2 p {
   font-family: var(--font-header);
   font-weight: 100;
+}
+
+#woods {
+  margin: 64px;
+  overflow: hidden;
 }
