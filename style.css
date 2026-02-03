@@ -44,6 +44,8 @@
 
 body {
   background-color: var(--bg-color);
+  max-width: 1440px;
+  margin-inline: auto;
 }
 
 h1 {
@@ -388,4 +390,68 @@ a:visited {
 #fatu {
   margin: 64px;
   overflow: hidden;
+}
+
+.lorsque-extrait {
+  display: flex;
+  margin-bottom: 64px;
+}
+
+.lorsque-page {
+  min-width: 35vw;
+  margin-left: 64px;
+  display: flex;
+  flex-direction: column;
+}
+
+.lorsque-page p {
+  font-family: var(--font-header);
+  margin-top: auto;
+}
+
+.lorsque-paragraph1 {
+  margin-right: 64px;
+}
+
+.lorsque-paragraph1 p {
+  font-weight: 100;
+}
+
+.lorsque-paragraph2 {
+  margin-left: 64px;
+  margin-bottom: 64px;
+  flex: 1;
+}
+
+.lorsque-extrait2 {
+  max-width: 1440px;
+  margin: 64px auto;
+  display: flex;
+  gap: 40px;
+}
+
+.lorsque-extrait2 p {
+  font-weight: 100;
+}
+
+.lorsque-extrait2 picture {
+  max-width: 30vw;
+}
+
+.lorsque-img-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 30vw;
+  gap: 20px;
+}
+
+.lorsque-img-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.lorsque-page2 {
+  font-family: var(--font-header);
+  font-weight: 100;
 }
