@@ -467,3 +467,40 @@ a:visited {
   margin: 64px;
   overflow: hidden;
 }
+
+/* Bogota Project Page */
+
+.picture-bogota {
+  margin: 64px;
+  overflow: hidden;
+}
+
+.bogota-title {
+  font-weight: 200;
+  margin: 64px auto;
+  text-align: center;
+}
+
+.bogota-text {
+  max-width: 60%;
+  margin: 0 auto;
+  flex: 2;
+  column-count: 2;
+  column-gap: 40px;
+  font-weight: 50;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.bogota-img-wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 64px;
+  overflow: hidden;
+}
+
+.bogota-img-wrapper img {
+  max-width: 660px;
+  height: auto;
+}
