@@ -630,3 +630,252 @@ a:visited {
   max-width: 700px;
   height: auto;
 }
+
+/* Responsive CSS for mobile devices */
+@media (max-width: 600px) {
+  .menu-nav {
+    padding: 24px;
+  }
+
+  .qualifications {
+    margin-left: 24px;
+    font-size: 1.5rem;
+  }
+
+  #website-title {
+    margin-left: 24px;
+    font-size: 4rem;
+  }
+
+  .description-hero {
+    flex-direction: column;
+    padding: 0 24px 24px 24px;
+    gap: 24px;
+  }
+
+  .desc-text {
+    width: 100%;
+  }
+
+  .desc-icons {
+    justify-content: center; /* Center the icons */
+  }
+
+  .project-card-1,
+  .project-card-2 {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .project-card-1 img,
+  .project-card-2 img {
+    width: 100%;
+  }
+
+  .project-card-1-desc,
+  .project-card-2-desc {
+    padding: 24px;
+  }
+
+  .project-card-1-desc p,
+  .project-card-2-desc p {
+    text-align: left;
+  }
+
+  .about-grid {
+    margin: 32px 24px;
+  }
+
+  #about-title {
+    margin-bottom: 32px;
+  }
+
+  .about-flex-container {
+    flex-direction: column;
+    margin-top: 32px;
+  }
+
+  .about-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .picture-lorsque,
+  .picture-bogota,
+  .picture-dsr,
+  #fatu,
+  #woods,
+  .bogota-img-wrapper,
+  .dsr-img-wrapper {
+    margin: 24px;
+  }
+
+  .lorsque-title,
+  .bogota-title,
+  .dsr-title {
+    margin: 0 24px;
+  }
+
+  .lorsque-desc-container {
+    flex-direction: column;
+    margin: 32px 24px;
+  }
+
+  .bw-gars {
+    width: 100%;
+  }
+
+  .lorsque-text,
+  .bogota-text,
+  .dsr-text {
+    column-count: 1;
+    max-width: 100%;
+    padding: 0 24px; /* Add padding for alignment with images */
+  }
+
+  .lorsque-extrait {
+    flex-direction: column;
+  }
+
+  .lorsque-page {
+    min-width: 100%;
+    margin-left: 24px;
+    margin-bottom: 24px;
+    order: 2; /* Move below lorsque-paragraph1 */
+  }
+
+  .lorsque-paragraph1 {
+    margin-right: 24px;
+    margin-left: 24px;
+    margin-bottom: 24px;
+    order: 1; /* Place above lorsque-page */
+  }
+
+  .lorsque-extrait2 {
+    flex-direction: column;
+    margin: 24px;
+    gap: 24px;
+  }
+
+  .lorsque-text-wrapper {
+    width: 100%;
+    order: 2; /* Move below images */
+  }
+
+  .lorsque-paragraph2 {
+    margin-left: 24px; /* Adjust margin */
+    margin-right: 24px; /* Adjust margin */
+    margin-bottom: 24px;
+  }
+
+  .lorsque-page2 {
+    margin-left: 24px; /* Adjust margin */
+  }
+
+  .lorsque-img-wrapper {
+    flex-direction: column; /* Stack images vertically */
+    max-width: 100%;
+    order: 1; /* Place images before text */
+    align-items: center; /* Center images */
+    gap: 20px; /* Keep gap between images */
+  }
+
+  .lorsque-img-wrapper picture {
+    width: 100%; /* Ensure images take full width within the wrapper */
+  }
+
+  .bogota-img-wrapper {
+    flex-direction: column;
+  }
+
+  .dsr-img-wrapper {
+    flex-direction: column;
+  }
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: var(--text-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg-color);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.mobile-nav.is-active {
+  transform: translateX(0);
+}
+
+.mobile-nav a {
+  color: var(--text-color);
+  font-size: 2rem;
+  margin: 1.5rem 0;
+  transition: color 0.3s;
+}
+
+.mobile-nav a:hover {
+  color: var(--accent-color);
+}
+
+.mobile-dropdown-content {
+  display: none; /* Hide by default on mobile */
+  flex-direction: column; /* Keep flex-direction for when it's displayed */
+  text-align: center;
+}
+
+.mobile-dropdown-content a {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+@media (max-width: 600px) {
+  .menu-tabs {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    margin-left: auto; /* Push hamburger to the right */
+  }
+
+  .hamburger.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .mobile-nav {
+    display: flex;
+  }
+}
