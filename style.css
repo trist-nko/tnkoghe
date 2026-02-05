@@ -52,6 +52,7 @@ h1 {
   font-size: clamp(2rem, 0.7179rem + 5.4701vw, 4rem);
   font-family: var(--font-header);
   color: var(--text-color);
+  font-weight: 200;
 }
 
 h2 {
@@ -112,6 +113,13 @@ a:visited {
   flex: 1;
   gap: 32px;
   border-bottom: solid 1px transparent;
+}
+
+#resume:hover a {
+  color: var(--accent-color);
+  transition: ease-in-out 0.3s;
+  cursor: pointer;
+  border-bottom: solid 1px var(--accent-color);
 }
 
 #about:hover,
@@ -293,6 +301,10 @@ a:visited {
   font-weight: 100;
 }
 
+.desc-text span {
+  color: var(--accent-color);
+}
+
 .desc-icons {
   display: flex;
   justify-content: flex-end;
@@ -404,6 +416,11 @@ a:visited {
 
 .about-desc {
   margin-bottom: 32px;
+  font-weight: 100;
+}
+
+.about-desc span {
+  color: var(--accent-color);
 }
 
 .about-img {
@@ -461,6 +478,7 @@ a:visited {
 .lorsque-page {
   min-width: 35vw;
   margin-left: 64px;
+  margin-bottom: 64px;
   display: flex;
   flex-direction: column;
 }
@@ -472,6 +490,7 @@ a:visited {
 
 .lorsque-paragraph1 {
   margin-right: 64px;
+  margin-bottom: 64px;
 }
 
 .lorsque-paragraph1 p {
