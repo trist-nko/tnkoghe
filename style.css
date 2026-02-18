@@ -7,27 +7,27 @@
 
 @font-face {
   font-family: "Array";
-  src: url("/fonts/ARRAY-REGULAR.OTF") format("otf");
+  src: url("fonts/ARRAY-REGULAR.OTF") format("opentype");
 }
 
 @font-face {
   font-family: "Satoshi";
-  src: url("/fonts/SATOSHI-LIGHT.OTF") format("otf");
+  src: url("fonts/SATOSHI-LIGHT.OTF") format("opentype");
 }
 
 @font-face {
   font-family: "IBMPlexMono";
-  src: url("/fonts/IBMPLEXMONO-EXTRALIGHT.TTF") format("truetype");
+  src: url("fonts/IBMPLEXMONO-EXTRALIGHT.TTF") format("truetype");
 }
 
 @font-face {
   font-family: "InstrumentSerif-Regular";
-  src: url("/fonts/InstrumentSerif-Regular.ttf") format("truetype");
+  src: url("fonts/InstrumentSerif-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "InstrumentSerif-Italic";
-  src: url("/fonts/InstrumentSerif-Italic.ttf") format("truetype");
+  src: url("fonts/InstrumentSerif-Italic.ttf") format("truetype");
 }
 
 :root {
